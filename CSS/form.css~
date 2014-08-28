@@ -1,0 +1,205 @@
+
+
+/* span id's to check conditions*/
+#usrname,#pswd,#firstname,#lastname,#ppict,#dobday,#dobmonth,#dobyear,#hobby,#cont,#mobileno
+{
+color:red;
+text-transform:capitalize;
+}
+/* heading*/
+h3
+{
+text-transform:uppercase;
+color:#000088;
+ background:#E0FFFF;
+}
+/* paragraph displaying message after successful form submission*/
+p#success
+{
+display:none;
+width:500px;
+height:50px;
+background-color:green;
+margin:auto;
+margin-bottom:10px;
+margin-top:10px;
+border-radius:12px;
+color:white;
+text-align:center;
+	
+}
+/*BODY*/
+body
+{
+   padding:0px;
+   margin:0px;
+   position:relative; 
+   background: url('../images/bg.jpg') repeat scroll 0% 0% #10A5D3;
+    
+}
+/* image for username*/
+.user
+{
+   background:  url("../images/User1.png");
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 20px;
+
+}
+/* image for password*/
+
+.key 
+{
+   background:  url("../images/key.gif");
+   background-repeat: no-repeat;
+   background-position: left;
+   padding-left: 20px;
+
+}
+/* image for phone number*/
+.ph 
+{
+margin-left:5px;
+padding-left:25px;
+   background:  url("../images/ph.jpg");
+   background-repeat: no-repeat;
+   background-position: left;
+}
+/*progress bar */
+progress
+{
+   width: 800px;
+   height: 30px;  
+margin-left:50px;
+margin-bottom:30px;
+}
+/*FIELDSET*/
+fieldset
+{
+width:700px;
+margin:auto;
+padding:20px;
+}
+/*main div*/
+#main
+{
+
+   position:relative;
+   margin:0 auto;
+   border-color: #006400;
+}
+/*class in main div*/
+#main .main2
+{
+border:1px solid green;
+width:900px;
+margin:0 auto;
+
+background-color:#00FA9A;
+border-radius: 3px;
+position: relative;
+ /*padding: 20px 20px 20px;*/
+}
+/*class for submit button*/
+/*.sub
+{
+   float:right;
+    width:100px;
+    height: 30px;
+}
+*/
+
+legend
+{
+    color:blue;
+}
+
+/*input[type=submit] {
+float:right;
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #527881;
+  text-shadow: 0 1px #e3f1f1;
+  background: #cde5ef;
+  border: 1px solid;
+  border-color: #b4ccce #b3c0c8 #9eb9c2;
+  border-radius: 16px;
+  outline: 0;
+  @include box-sizing(content-box); // Firefox sets this to border-box by default
+  @include linear-gradient(top, #edf5f8, #cde5ef);
+  @include box-shadow(inset 0 1px white, 0 1px 2px rgba(black, .15));
+
+  &:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    @include box-shadow(inset 0 0 3px rgba(black, .2));
+  }
+}
+
+*/
+
+/*NEW BUTTON*/
+
+
+.sub {
+    background: url('../images/login.png') no-repeat scroll 0% 0% transparent;
+    width: 82px;
+    height: 32px;
+    border: 0px none;
+    float: right;
+    margin-right: 24px;
+}
+
+
+
+
+/* NEW MODIFICATIONS START*/
+
+form#form1 input.user, form#form1 input.key,form#form1 input.ph,input.fn, input.ln {
+/*-moz-*/border-radius: 5px;
+-webkit-border-radius: 5px;
+	background-color: #eaeaea;
+background:/*-moz-*/linear-gradient(top, #ffffff, #eaeaea);
+    	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ffffff), color-stop(1.0, #eaeaea));
+    	border: 1px solid #cacaca;
+    	color: #444;
+    	font-size: 20px;
+    	/*margin: 0 0 25px;
+    	padding: 8px 10px;
+    	width: 240px;*/
+}
+
+input.user:focus, input.key:focus,input.ph:focus, input.ln:focus,input.fn:focus,textarea:focus {
+    -webkit-box-shadow:0 0 25px #ccc;
+    /*-moz-*/box-shadow:0 0 25px #ccc;
+    box-shadow:0 0 25px #ccc;
+    -webkit-transform: scale(1.05);
+    /*-moz-*/transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+input.user, input.key,input.ph, input.fn, input.ln,textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color:#fff;
+    border:0px solid #ccc;
+    font-size:20px;
+    /*width:100px;
+    min-height:20px;*/
+    display:block;
+    margin-bottom:5px;
+    margin-top:8px;
+    -webkit-border-radius:5px;
+    /*-moz-*/border-radius:5px;
+    border-radius:5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/* NEW MODIFICATIONS END*/
+
+
+
+
